@@ -71,6 +71,14 @@ img {
     padding: 15px;
 }
 
+.w-100 {
+    width: 100%;
+}
+
+.h-800 {
+    height: 800px;
+}
+
 .roboto-medium {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -105,8 +113,15 @@ img {
     -o-border-radius: 5px;
 }
 
- 
-
-
-
 /* === Nav part end === */
+
+/* === Banner part start === */
+.banner-item {
+    position: relative;
+}
+
+.banner-item img {
+    position: absolute;
+}
+
+/* === Banner part End === */
