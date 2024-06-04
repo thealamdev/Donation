@@ -33,3 +33,80 @@ img {
 }
 
 /* === basic common styling end === */
+
+/* === component css start === */
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.align-middle {
+    align-items: center;
+}
+
+.border-slate {}
+
+.p-1 {
+    padding: 3px;
+}
+
+.p-2 {
+    padding: 6;
+}
+
+.p-3 {
+    padding: 9px;
+}
+
+.p-4 {
+    padding: 12px;
+}
+
+.p-5 {
+    padding: 15px;
+}
+
+.roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.border-bottom-slate {
+    border-bottom: 1px solid #94a3b8;
+}
+
+.active {
+    color: #0ea5e9 !important;
+    border: 1px solid #0ea5e9 !important;
+}
+
+/* === component css end === */
+
+/* === Nav part css start === */
+.nav-menu li {
+    display: inline-block;
+    padding-left: 15px;
+}
+
+.nav-menu li a {
+    padding: 5px 10px;
+    border: 1px solid #94a3b8;
+    color: #0f172a;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+ 
+
+
+
+/* === Nav part end === */
