@@ -1,33 +1,47 @@
 /**
- * Banner part
+ * Banner Slider Part.
  */
 let bannerItem = document.querySelectorAll('.banner-item img');
-let prev = document.querySelector('.prev');
-let next = document.querySelector('.next');
+let prevBtn = document.querySelector('.prev');
+let nextBtn = document.querySelector('.next');
 
 bannerItem.forEach((element, index) => {
     element.style.left = `${index * 100}%`;
 });
 
-let count = 0;
+var count = 0;
 let len = bannerItem.length;
-next.addEventListener('click', function () {
+nextBtn.addEventListener('click', function () {
+    next();
+});
+
+prevBtn.addEventListener('click', function () {
+    prev()
+});
+
+
+function next() {
     count++;
     if (count >= len) {
         count = 0;
     }
     slide(count);
-});
-prev.addEventListener('click', function () {
+}
+
+function prev() {
     count--;
     if (count < 0) {
         count = len - 1;
     }
     slide(count);
-});
+}
 
 function slide(count) {
-    bannerItem.forEach((element, index) => {
+    bannerItem.forEach((element) => {
         element.style.transform = `translateX(-${count * 100}%)`;
     })
 }
+
+setInterval(() => {
+    next();
+}, 5000)
