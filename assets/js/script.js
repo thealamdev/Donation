@@ -19,7 +19,6 @@ prevBtn.addEventListener('click', function () {
     prev()
 });
 
-
 function next() {
     count++;
     if (count >= len) {
