@@ -2,7 +2,8 @@
  * Banner part
  */
 let bannerItem = document.querySelectorAll('.banner-item img');
-let buttonClass = document.querySelector('.buttonClass');
+let prev = document.querySelector('.prev');
+let next = document.querySelector('.next');
 
 bannerItem.forEach((element, index) => {
     element.style.left = `${index * 100}%`;
@@ -10,10 +11,17 @@ bannerItem.forEach((element, index) => {
 
 let count = 0;
 let len = bannerItem.length;
-buttonClass.addEventListener('click', function () {
+next.addEventListener('click', function () {
     count++;
     if (count >= len) {
         count = 0;
+    }
+    slide(count);
+});
+prev.addEventListener('click', function () {
+    count--;
+    if (count < 0) {
+        count = len - 1;
     }
     slide(count);
 });
