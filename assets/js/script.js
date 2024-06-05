@@ -41,6 +41,6 @@ function slide(count) {
     })
 }
 
-setInterval(() => {
-    next();
-}, 5000)
+// setInterval(() => {
+//     next();
+// }, 5000)
